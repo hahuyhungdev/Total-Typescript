@@ -38,3 +38,35 @@ const test = (data: TUnknow) => {
     console.log(data.test);
   }
 };
+// ---------------------------------------------
+// Use 'extends' keyword to narrow the value of a generic type
+const deppValue = {
+  foo: {
+    a: true,
+    b: 2,
+  },
+  bar: {
+    c: "cool",
+    d: "deep",
+  },
+};
+function handleDeepValue<
+  Obj,
+  FirstKey extends keyof Obj,
+  SecondKey extends keyof Obj[FirstKey]
+>(obj: Obj, firstKey: FirstKey, secondKey: SecondKey) {
+  return {} as any;
+}
+export const getDeepValue = <
+  Obj,
+  FirstKey extends keyof Obj,
+  SecondKey extends keyof Obj[FirstKey]
+>(
+  obj: Obj,
+  firstKey: FirstKey,
+  secondKey: SecondKey
+) => {
+  return {} as any;
+};
+const resultDeep = handleDeepValue(deppValue, "foo", "a");
+const resultDeep2 = getDeepValue(deppValue, "foo", "a");
