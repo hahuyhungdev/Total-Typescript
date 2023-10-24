@@ -21,6 +21,7 @@ npm install
 npm run exercise 01
 
 # Runs linting and tests on the solution
+
 npm run solution 01
 ```
 
