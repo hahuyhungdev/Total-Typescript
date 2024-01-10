@@ -2,7 +2,7 @@
 
 ## Quickstart
 
-Take the course on [Total TypeScript](https://totaltypescript.com/tutorials/beginners-typescript). There, you'll find:
+Take the course on [Total TypeScript](https://totaltypescript.com/tutorials/beginners-typescript). There, you will find:
 
 - Video explanations for each problem and solution
 - Transcripts
