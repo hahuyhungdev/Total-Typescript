@@ -33,3 +33,9 @@ const pickKeyObject = <TObj extends object, TOmitted extends keyof TObj>(
 };
 const resultPick = pickKeyObject(shapesValue, ["circle", "hung"]);
 console.log(resultPick);
+type TUnknow = {};
+const test = (data: TUnknow) => {
+  if ("test" in data && typeof data.test === "string") {
+    console.log(data.test);
+  }
+};
